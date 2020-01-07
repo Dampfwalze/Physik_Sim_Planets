@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Senario>
+    <ScaleFactor>1e-5</ScaleFactor>
+    <SimulationSpeed>120</SimulationSpeed>
+
+
+    <Objects>
+        <Satellite pos="7371000,0,0" vel="0,8000,0" size="2"        mass="2000">Satellite</Satellite>
+        <Planet    pos="0,0,0"       vel="0,0,0"  radius="6371000"   mass="5.972e24">Earth</Planet>
+    </Objects>
+
+
+    <Drawing>
+        <Textures>
+            <Satellite>data/textures/satellite.png</Satellite>
+            <Earth>data/textures/earth.jpg</Earth>
+        </Textures>
+    </Drawing>
+</Senario>

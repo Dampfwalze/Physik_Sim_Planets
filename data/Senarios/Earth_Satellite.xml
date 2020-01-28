@@ -5,7 +5,7 @@
 
 
     <Objects>
-        <Satellite pos="7371000,0,0" vel="0,8000,0" size="2"        mass="2000">Satellite</Satellite>
+        <Satellite pos="7371000,0,0" vel="0,10000,0" size="2"        mass="2000">Satellite</Satellite>
         <Planet    pos="0,0,0"       vel="0,0,0"  radius="6371000"   mass="5.972e24">Earth</Planet>
     </Objects>
 

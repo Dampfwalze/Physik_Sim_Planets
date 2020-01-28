@@ -29,12 +29,23 @@ class Senario {
     }
   }
   
+  public void setup(){
+    for(PhysiksObject o : objects){
+      o.calcOrbitingObjects(this);
+      println(o.orbiting);
+    }
+  }
+  
   public void calcGravity(PhysiksObject o1, PhysiksObject o2){
-    float r = o1.pos.dist(o2.pos) / SenarioLoader.ScaleFactor;
-    float fce = G_const * (o1.mass * o2.mass / ((r*r)*SenarioLoader.ScaleFactor));
+    float fce = calcGravityForce(o1, o2);
     PVector dir = o1.pos.copy().sub(o2.pos).normalize();
     o2.addForce(dir.copy().mult( fce));
     o1.addForce(dir.copy().mult(-fce));
+  }
+  
+  public float calcGravityForce(PhysiksObject o1, PhysiksObject o2){
+    float r = o1.pos.dist(o2.pos) / SenarioLoader.ScaleFactor;
+    return G_const * (o1.mass * o2.mass / ((r*r)*SenarioLoader.ScaleFactor));
   }
   
   private boolean prePressed = false;
@@ -101,7 +112,8 @@ class Senario {
   }
   private void drawValue(float v, String additional){
     String txt = (nf(abs(v), 0, 1));
-    txt = txt.substring(0, txt.indexOf(','));
+    int indexx = txt.indexOf(',');
+    txt = (indexx >= 0)? txt.substring(0, indexx) : txt;
     int index = min(3, txt.length());
     txt = txt.substring(0, index) + ((index < 3)? "" : "e" + (txt.length()-3));
     //float w = GUI.textWidth(txt.substring(0, txt.indexOf(',')));

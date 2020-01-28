@@ -36,6 +36,7 @@ static class SenarioLoader {
     
     ((Physik_Sim_Planets)p).cam.reset();
     
+    senario.setup();
     return senario;
   }
   

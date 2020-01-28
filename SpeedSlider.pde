@@ -20,7 +20,7 @@ class SpeedSlider extends GUIElement {
     texr = createImage(texl.width, texl.height, RGB);
     texl.loadPixels();
     texr.loadPixels();
-    println(texl.pixels.length, texr.pixels.length);
+    //println(texl.pixels.length, texr.pixels.length);
     for(int i = 0; i < texl.width; i++){
       for(int j = 0; j < texl.height; j++){
         texl.pixels[texl.width * j + i] = color(100, alpha(texl.pixels[texl.width * j + i]));

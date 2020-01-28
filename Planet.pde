@@ -33,7 +33,6 @@ class Planet extends PhysiksObject {
     translate(pos.x, pos.y, pos.z);
     stroke(255, 0, 0);
     strokeWeight(1);
-    println(vel.mag());
     if(vel.mag() >= 0.000001){
       PVector v = vel.copy().normalize().mult(radius*3);
       line(0, 0, 0, v.x, v.y, v.z);

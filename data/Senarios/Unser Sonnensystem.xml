@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Senario>
+    <ScaleFactor>1.5e-10</ScaleFactor>
+    <SimulationSpeed>60000</SimulationSpeed>
+
+
+    <Objects>
+        <Planet pos="0,0,0"      vel="0,0,0"     radius="6963400000"  mass="1.989e30">Sun</Planet>
+        <Planet pos="58e9,0,0" 	 vel="0,47800,0" radius="4880000000"  mass="3.285e23" rot_speed="0">Mercury</Planet>
+        <Planet pos="110e9,0,0"  vel="0,35000,0" radius="6052000000"  mass="4.869e24" rot_speed="0">Venus</Planet>
+        <Planet pos="1496e8,0,0" vel="0,29780,0" radius="6371000000"  mass="5.972e24" rot_speed="7.272e-5">Earth</Planet>
+        <Planet pos="2279e8,0,0" vel="0,24130,0" radius="3390000000"  mass="6.149e23" rot_speed="0">Mars</Planet>
+        <Planet pos="780e9,0,0"  vel="0,13000,0" radius="6991100000"  mass="1.899e27" rot_speed="0">Jupiter</Planet>
+        <Planet pos="1.5e12,0,0" vel="0,9.6e3,0" radius="5823200000"  mass="5.685e26" rot_speed="0">Saturn</Planet>
+        <Planet pos="3e12,0,0" 	 vel="0,6.8e3,0" radius="2536200000"  mass="8.683e25" rot_speed="0">Uranus</Planet>
+        <Planet pos="4.6e12,0,0" vel="0,5.4e3,0" radius="2462200000"  mass="1.0243e26" rot_speed="0">Neptune</Planet>
+    </Objects>
+
+
+    <Drawing>
+        <Textures>
+            <Sun>data/textures/2k_sun.jpg</Sun>
+            <Mercury>data/textures/mercury.jpg</Mercury>
+            <Venus>data/textures/2k_venus.jpg</Venus>
+            <Mars>data/textures/2k_mars.jpg</Mars>
+            <Earth>data/textures/2k_earth.jpg</Earth>
+            <Jupiter>data/textures/2k_jupiter.jpg</Jupiter>
+            <Saturn>data/textures/2k_saturn.jpg</Saturn>
+            <Uranus>data/textures/2k_uranus.jpg</Uranus>
+            <Neptune>data/textures/2k_neptune.jpg</Neptune>
+        </Textures>
+    </Drawing>
+</Senario>

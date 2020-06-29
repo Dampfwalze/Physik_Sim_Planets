@@ -109,7 +109,7 @@ public void perspective() {
   float cameraX = width / 2.0f;
   float cameraY = height / 2.0f;
   float cameraZ = cameraY / ((float) Math.tan(cameraFOV / 2.0f));
-  float cameraNear = cameraZ / 500.0f;
+  float cameraNear = cameraZ / 5000.0f;
   float cameraFar = cameraZ * 30.0f;
   float cameraAspect = (float) width / (float) height;
   

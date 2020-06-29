@@ -31,7 +31,7 @@ class PhysiksObject {
   }
   
   public void update(float timestep, Senario parent){
-    if(timestep != 0){
+    if(true || timestep != 0){
       prePos = pos.copy();
       track.add(pos.copy());
       if(track.size() > 200){
